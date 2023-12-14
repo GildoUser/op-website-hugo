@@ -17,10 +17,16 @@ false
 Obs: Os retornos tem que ser dados do tipo boolean.
 
 */
-
+const arrya = ["Daniel", "John", "jamelão"]
 function dataType(types){
+  let z = types[0]
   // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
+  for (let i = 0; i < types.length; i++){
+    if(typeof z != typeof types[i]){
+      return false
+    }
+  }
+  return true// Retorne o resultado aqui
 }
-
+console.log(dataType(arrya))
 module.exports = dataType;

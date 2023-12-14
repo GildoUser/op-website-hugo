@@ -15,10 +15,19 @@ A saída deve ter o seguinte formato:
 --------------------------------
 
 */
-
-function findOldestSon(pedroAge, kidsAge){
-  // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
+const arrays = {
+  pedroAge: 40,
+  kidsAge: [11, 8, 9]
 }
-
+function findOldestSon(pedroAge, kidsAge){
+  let childAge = 0;
+  for(let i = 0; i < kidsAge.length; i++){
+    childAge += kidsAge[i]
+  }
+  
+  let arr = pedroAge - childAge// Retorne o resultado aqui
+  // Desenvolva seu código aqui.
+  return `O filho mais velho tem ${arr} anos.`
+}
+console.log(findOldestSon(arrays.pedroAge,arrays.kidsAge))
 module.exports = findOldestSon;

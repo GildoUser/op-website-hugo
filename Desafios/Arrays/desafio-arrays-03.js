@@ -15,10 +15,18 @@ Caso o contrário:
 ---------------------------
 
 */
+let nameArray = ['Silvia', 'Isa', 'Mica', 'Amanda']
 
 function findGuest(names, guest){
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+  for(let i=0; i < names.length; i++){
+    if (guest == names[i]){
+      return "O nome está na lista"
+    }
+    // Desenvolva seu código nessa função
+    // Retorne o resultado aqui
+  }
+  return "O nome não está na lista"
 }
-
-module.exports = findGuest;
+const teste = findGuest(nameArray,"Mica")
+console.log(teste)
+//module.exports = findGuest
