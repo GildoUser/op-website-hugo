@@ -5,7 +5,7 @@
 Escreva um algoritmo que recebe um array de números inteiros, procure o maior valor e o retorne.
 
 */
-const numVariable = [3, 1, 8, 34, 13, 2, 5];
+const numVariable = [3, 1, 8, 34, 13, 2, 5,6];
 function getMaxNumber(numbers) {
   for(let i,z = 0; i < numbers.length; i++){
     if(numbers[i] > numbers[i+1]){
